@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Amhara Union in Kentucky</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-1bYm5Ldrfhb5nHhIRa1XVGHEG315ZGl5CL2JWxCr3Se1f5+IV8Eb+7ChvHPHucgo" crossorigin="anonymous">
+</head>
+<body>
+<div class="logo-container">
+    <img src="logo.png" alt="Amhara Union in Kentucky Logo" class="logo">
+</div>
+
+<header class="main-header">
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="member_registration.html">Member Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="contact">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Amhara Union in Kentucky. All rights reserved.</p>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

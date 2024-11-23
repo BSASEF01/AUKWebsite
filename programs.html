@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Amhara Union in Kentucky</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+</head>
+<body>
+<div class="logo-container">
+    <img src="logo.png" alt="Amhara Union in Kentucky Logo" class="logo">
+</div>
+
+<header class="main-header">
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="member_registration.html">Member Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="programs.html#events">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="programs">
+    <div class="container">
+        <h1>Our Programs</h1>
+        <div class="program-list">
+            <div class="program">
+                <h2>Education Program</h2>
+                <p>Providing educational resources and support to the community.</p>
+            </div>
+            <div class="program">
+                <h2>Health Program</h2>
+                <p>Promoting health and wellness through various initiatives.</p>
+            </div>
+            <!-- Add more programs as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="events">
+    <div class="container">
+        <h1>Upcoming Events</h1>
+        <div id="calendar"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Amhara Union in Kentucky. All rights reserved.</p>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            events: [
+                {
+                    title: 'Event 1',
+                    start: '2024-08-10'
+                },
+                {
+                    title: 'Event 2',
+                    start: '2024-08-15'
+                }
+            ]
+        });
+        calendar.render();
+    });
+</script>
+</body>
+</html>

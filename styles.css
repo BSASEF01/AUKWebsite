@@ -1,0 +1,336 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation */
+.main-header {
+    background-color: #28821d;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header .nav-list li {
+    margin: 0 15px;
+}
+
+.main-header .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-header .nav-list a:hover {
+    color: #ffdd57;
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Home Page */
+#home {
+    text-align: center;
+    background: url('banner.png') no-repeat center center/cover;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+/* Container for centered images */
+.image-container {
+    text-align: center; /* Centers the images horizontally */
+    margin: 20px auto; /* Centers container horizontally with some margin */
+}
+
+/* Styles for images inside the container */
+.image-container img {
+    max-width: 100%; /* Ensures images don’t exceed their container width */
+    height: auto; /* Maintains aspect ratio */
+    width: 50%; /* Adjust as needed for the desired size */
+    margin: 10px 0; /* Adds space between images */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 50%; /* Adjust size for smaller screens */
+    }
+}
+
+
+/* About Us Page */
+#about {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.mission-values {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission, .values {
+    flex: 1;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2, .values h2 {
+    font-size: 1.8rem;
+    color: #004080;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.mission p, .values p {
+    color: #666;
+    text-align: center;
+}
+
+/* Programs Page */
+#programs .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#programs .program {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    padding: 2rem;
+    flex: 0 1 48%;
+}
+
+#programs .program h2 {
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+#programs .program p {
+    color: #666;
+}
+
+/* Donate Page */
+#donate {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+#donate h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #004080;
+}
+
+#donate p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+#donate .donate-button {
+    background-color: #ffdd57;
+    color: #004080;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#donate .donate-button:hover {
+    background-color: #ffc107;
+}
+
+/* Member Registration Page */
+#member-registration {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#member-registration form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#member-registration label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    color: #004080;
+}
+
+#member-registration input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#member-registration .submit-button {
+    background-color: #004080;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#member-registration .submit-button:hover {
+    background-color: #002a4d;
+}
+
+/* Contact Page */
+#contact {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    color: #004080;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#contact .submit-button {
+    background-color: #004080;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact .submit-button:hover {
+    background-color: #002a4d;
+}
+
+/* Footer */
+footer {
+    background-color: #28821d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #00000;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffdd57;
+}
+
+/* Event Calendar */
+#events {
+    padding: 4rem 0;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#calendar {
+    border: 2px solid red; /* Just for debugging */
+    background-color: #fff; /* Just for debugging */
+}
+.slideshow-container {
+    column-count: 3; /* Adjust the number of columns as needed */
+    column-gap: 10px;
+}
+
+
